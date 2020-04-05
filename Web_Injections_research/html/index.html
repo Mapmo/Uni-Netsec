@@ -36,11 +36,11 @@
 	<!-- Menu -->
 	<nav class="menu" id="theMenu">
 		<div class="menu-wrap">
-			<h1 class="logo"><a href="index.html#home">Minimal</a></h1>
+			<h1 class="logo"><a href="index.html#home">Навигация</a></h1>
 			<i class="icon-remove menu-close"></i>
-			<a href="#home" class="smoothScroll">Home</a>
-			<a href="#about" class="smoothScroll">About</a>
-			<a href="#portfolio" class="smoothScroll">Portfolio</a>
+			<a href="#home" class="smootScroll">Начало</a>
+			<a href="#about" class="smoothScroll">Съдържание</a>
+			<a href="#intro" class="smoothScroll">Въведение</a>
 			<a href="#contact" class="smoothScroll">Contact</a>
 			<a href="#"><i class="icon-facebook"></i></a>
 			<a href="#"><i class="icon-twitter"></i></a>
@@ -58,14 +58,10 @@
 	<section id="home" name="home"></section>
 	<div id="headerwrap">
 		<div class="container">
-			<div class="logo">
-				<img src="assets/img/logo.png">
-			</div>
-			<br>
 			<div class="row">
-				<h1>MINIMAL THEME</h1>
+				<h1>Уязвимости в уеб приложения - инжекции (OWASP-A1). Примери.</h1>
 				<br>
-				<h3>Hello, I'm Carlos. I love design.</h3>
+				<h3>Тема 101</h3>
 				<br>
 				<br>
 				<div class="col-lg-6 col-lg-offset-3">
@@ -76,80 +72,214 @@
 	
 	
 	
-	<!-- ========== ABOUT SECTION ========== -->
+	<!-- ========== Съдържание ========== -->
 	<section id="about" name="about"></section>
 	<div id="f">
 		<div class="container">
 			<div class="row">
-				<h3>ABOUT ME</h3>
+				<h3>Съдържание</h3>
 				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
 				
 				<!-- INTRO INFORMATIO-->
+			
 				<div class="col-lg-6 col-lg-offset-3">
-					<p>A full time theme crafter based in Madrid, Spain. I love designing beautiful, clean and user-friendly interfaces for websites.</p>
-					<p>My passion is turning good ideas and products into eye-catching sites.</p>
-					<p>Sometimes I blog about design and web trends. Also I share links and my thoughts on <a href="http://twitter.com/BlackTie_co">Twitter</a>. Need a free handsome bootstrap theme? <a href="http://blacktie.co">Done!</a></p>
-					<p>I'm available for freelance jobs. Contact me now.</p>
-					<p><button type="button" class="btn btn-warning">I HAVE A FREELANCE JOB</button></p>
+					<ol> 
+						<h4><li><a href="#intro">Въведение</a></li></h4>
+						
+						<h4><li><a href="#code">Инжектиране на код</a> <br/>
+							<ol type="a">
+								<h4><li>Какво представлява инжектиране на код</li></h4>
+								<h4><li>Изпълнение на системни команди</li></h4>
+								<h4><li>Намиране и предотвратяване на инжектиран код</li></h4>
+							</ol>
+						</li></h4>
+						
+						<h4><li><a href="#crlf">CRLF инжекции</a> <br/>
+							<ol type="a">
+								<h4><li>Какво представлява CRLF</li></h4>
+								<h4><li>Какво представлява разцепване на http заявка</li></h4>
+								<h4><li>Откриване на CRLF инжекция</li></h4>
+								<h4><li>Защита от CRLF инжекции</li></h4>
+							</ol>
+						</li></h4>
+
+						<h4><li><a href="#mail">Имейл инжекции</a> <br/>
+							<ol type="a">
+								<h4><li>Какво представлява имейл инжекция</li></h4>
+								<h4><li>Как работи SMTP</li></h4>
+								<h4><li>Уязвим код</li></h4>
+								<h4><li>Намиране на уязвим код</li></h4>
+								<h4><li>Превенция</li></h4>
+							</ol>
+						</li></h4>
+						
+						<h4><li><a href="#header">Хедър атака срещу хоста</a> <br/>
+							<ol type="a">
+								<h4><li>Какво представлява хедър атака срещу хоста</li></h4>
+								<h4><li>Отравяме ма кеша</li></h4>
+								<h4><li>Отравяне на password reset</li></h4>
+								<h4><li>Откриване на уязвимости за отравяне на password reset</li></h4>
+								<h4><li>Превенция</li></h4>
+							</ol>
+						</li></h4>
+
+						<h4><li><a href="#ldap">LDAP инжекции</a></h4></li>
+						
+							<h4><li><a href="#shell">Инжекции на шел команди</a> <br/>
+							<ol type="a">
+								<h4><li>Какво представлява нжекция на шел команди</li></h4>
+								<h4><li>Пример за инжекция на шел команда</li></h4>
+								<h4><li>Инжекция чрез специални символи</li></h4>
+								<h4><li>Защита от инжекции на шел команди</li></h4>
+							</ol>
+						</li></h4>
+						
+						<h4><li><a href="#xpath">Xpath инжекции</a></h4></li>
+						
+						<h4><li><a href="#lit">Използвана литература</a></h4></li>
+					</ol>
 				</div>								
 			</div>
 		</div><!-- /container -->
 	</div><!-- /f -->
 	
 
-	<!-- ========== CAROUSEL SECTION ========== -->	
-	<section id="portfolio" name="portfolio"></section>
+	<!-- ========== Въведение ========== -->	
+	<section id="intro" name="portfolio"></section>
 	<div id="f">
 		<div class="container">
 			<div class="row centered">
-				<h3>SOME PROJECTS</h3>
+				<h3>Въведение</h3>
 				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
 				
 				<div class="col-lg-6 col-lg-offset-3">
-					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-						<!-- Wrapper for slides -->
-						<div class="carousel-inner">
-							<div class="item active centered">
-								<img class="img-responsive" src="assets/img/c1.png" alt="">
-							</div>
-							<div class="item centered">
-								<img class="img-responsive" src="assets/img/c2.png" alt="">
-							</div>
-							<div class="item centered">
-								<img class="img-responsive" src="assets/img/c3.png" alt="">
-							</div>
-						</div>
-						<br>
-						<br>
-						<ol class="carousel-indicators">
-						    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-						    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-						    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-						</ol>
-					</div>
+				
+				</div><!-- col-lg-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</div>	<!-- f -->
+	
+	<!-- ========== Инжектиране на код ========== -->	
+	<section id="code" name="portfolio"></section>
+	<div id="f">
+		<div class="container">
+			<div class="row centered">
+				<h3>Инжектиране на код</h3>
+				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+				
+				<div class="col-lg-6 col-lg-offset-3">
+				
 				</div><!-- col-lg-8 -->
 			</div><!-- row -->
 		</div><!-- container -->
 	</div>	<!-- f -->
 
-	<!-- ========== CONTACT SECTION ========== -->
-	<section id="contact" name="contact"></section>
+	
+	<!-- ========== CRLF инжекции ========== -->	
+	<section id="crlf" name="portfolio"></section>
 	<div id="f">
 		<div class="container">
-			<div class="row">
-				<h3>CONTACT ME</h3>
+			<div class="row centered">
+				<h3>CRLIF инжекции </h3>
 				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
 				
 				<div class="col-lg-6 col-lg-offset-3">
-					<p>Some Avenue, 987<br/>Madrid, Spain<br/>+34 8984-4343</p>
-					<p>iam@awesomemail.com</p>
-					<p><button type="button" class="btn btn-warning">YEAH! CONTACT ME NOW!</button></p>
-				</div>
-			</div>
-		</div>
-	</div>
+				
+				</div><!-- col-lg-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</div>	<!-- f -->
 
-	
+	<!-- ========== Имейл инжекции ========== -->	
+	<section id="mail" name="portfolio"></section>
+	<div id="f">
+		<div class="container">
+			<div class="row centered">
+				<h3>Имейл инжекции</h3>
+				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+				
+				<div class="col-lg-6 col-lg-offset-3">
+				
+				</div><!-- col-lg-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</div>	<!-- f -->
+
+	<!-- ========== Хедър атака срещу хоста ========== -->	
+	<section id="header" name="portfolio"></section>
+	<div id="f">
+		<div class="container">
+			<div class="row centered">
+				<h3>Хедър атака срещу хоста</h3>
+				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+				
+				<div class="col-lg-6 col-lg-offset-3">
+				
+				</div><!-- col-lg-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</div>	<!-- f -->
+
+	<!-- ========== LDAP инжекции ========== -->	
+	<section id="ldap" name="portfolio"></section>
+	<div id="f">
+		<div class="container">
+			<div class="row centered">
+				<h3>LDAP инжекции</h3>
+				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+				
+				<div class="col-lg-6 col-lg-offset-3">
+				
+				</div><!-- col-lg-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</div>	<!-- f -->
+
+	<!-- ========== Инжекции на шел команди ========== -->	
+	<section id="shell" name="portfolio"></section>
+	<div id="f">
+		<div class="container">
+			<div class="row centered">
+				<h3>Инжекции на шел команди</h3>
+				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+				
+				<div class="col-lg-6 col-lg-offset-3">
+				
+				</div><!-- col-lg-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</div>	<!-- f -->
+
+	<!-- ========== Xpath инжекции ========== -->	
+	<section id="xpath" name="portfolio"></section>
+	<div id="f">
+		<div class="container">
+			<div class="row centered">
+				<h3>Xpath инжекции</h3>
+				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+				
+				<div class="col-lg-6 col-lg-offset-3">
+				
+				</div><!-- col-lg-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</div>	<!-- f -->
+
+       <!-- ========== Използвана литература ========== -->
+        <section id="lit" name="portfolio"></section>
+        <div id="f">
+                <div class="container">
+                        <div class="row centered">
+                                <h3>Използвана литература</h3>
+                                <p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+
+                                <div class="col-lg-6 col-lg-offset-3">
+
+                                </div><!-- col-lg-8 -->
+                        </div><!-- row -->
+                </div><!-- container -->
+        </div>  <!-- f -->
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
