@@ -35,7 +35,9 @@ p {
 .centered {
     text-align: center;
 }
-
+li {
+	color:#f7d1b6;
+}
 /* Links */
 a {
     color: #f85c37;
@@ -310,4 +312,12 @@ a:after {
 			transition: all .1s ease-in-out;
 }
 
+.leftp {
+	text-align: left;
+}
 
+.example {
+	text-align:left;
+	border: 1px solid #f85c37;
+	padding: 1%;
+}
